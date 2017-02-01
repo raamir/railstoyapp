@@ -8,7 +8,23 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class='container'>
+    <div class="page-header">
+      <h1 class="text-info"><b>MY FIRST TOYAPP</b></h1>
+      </div>
+      <nav class="navbar navbar-default">
+  <div class="container-fluid">
+
+      <ul class="nav navbar-nav">
+
+        <li role="presentation"><a href="/">Home</a></li>
+        <li role="presentation"><a href="/users">Users</a></li>
+        <li role="presentation"><a href="/microposts">Microposts</a></li>
+        <li role="presentation"><a href="/static_pages/help">Help</a></li>
+      </ul>
+      </nav>
+    <div>
+      <%= yield %>
+    </div>
   </body>
 </html>

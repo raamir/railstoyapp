@@ -1,14 +1,21 @@
 <p id="notice"><%= notice %></p>
+<div class = "panel-default">
+    <div class ="panel-heading">
 
 <p>
   <strong>Content:</strong>
   <%= @micropost.content %>
 </p>
-
+</div>
+<div class = "panel-body">
 <p>
   <strong>User:</strong>
   <%= @micropost.user_id %>
 </p>
+</div>
 
-<%= link_to 'Edit', edit_micropost_path(@micropost) %> |
-<%= link_to 'Back', microposts_path %>
+<div class ="panel-footer">
+<%= link_to 'Edit', edit_micropost_path(@micropost), :class => "btn btn-primary" %> |
+<%= link_to 'Back', microposts_path, :class => "btn btn-danger" %>
+</div>
+</div>
